@@ -15,6 +15,12 @@ const text = (() => {
     _form.addEventListener('submit', formHandler);
 
     // TODO láta hluti í _items virka
+    console.log(items.children.length);
+    for (let i = 0; i < items.children.length; i++) {
+      console.log(items.children[i]);
+      items.children[i].addEventListener('submit', formHandler);  
+    }
+    //items.addEventListener('submit', formHandler);
   }
 
   function formHandler(e) {
@@ -24,28 +30,22 @@ const text = (() => {
   }
 
   // event handler fyrir það að klára færslu
-  function finish(e) {
-  }
+  function finish(e) {}
 
   // event handler fyrir það að breyta færslu
-  function edit(e) {
-  }
+  function edit(e) {}
 
   // event handler fyrir það að klára að breyta færslu
-  function commit(e) {
-  }
+  function commit(e) {}
 
   // fall sem sér um að bæta við nýju item
-  function add(value) {
-  }
+  function add(value) {}
 
   // event handler til að eyða færslu
-  function deleteItem(e) {
-  }
+  function deleteItem(e) {}
 
   // hjálparfall til að útbúa element
-  function el(type, className, clickHandler) {
-  }
+  function el(type, className, clickHandler) {}
 
   return {
     init: init
